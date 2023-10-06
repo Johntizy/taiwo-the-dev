@@ -11,8 +11,8 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -25,10 +25,21 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <Works /> 
+        <Works />
         <Contact />
         <StarsCanvas />
-        <ToastContainer />
+        <ToastContainer
+          position='top-right'
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme='dark'
+        />
       </div>
     </BrowserRouter>
   );
