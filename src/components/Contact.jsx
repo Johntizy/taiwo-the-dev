@@ -1,9 +1,57 @@
-import React from 'react'
+import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
+  const formRef = useRef();
+  const [formData, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-export default Contact
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = () => {}
+
+  const handleSubmit = () => {}
+
+  return (
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden" id="contact">
+      <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded 2xl'>
+        <p className={styles.sectionSubText}> Get in touch.</p>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
+
+        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Name</span>
+            <input type="text" name="name" placeholder="Enter your name" value={formData.name} onChange={handleChange} className="bg-tertiary px-6 py-4 placholder:text-secondary text-white rounded-lg outlined-none border-none font-medium" />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Name</span>
+            <input type="email" name="email" placeholder="Enter your email address" value={formData.email} onChange={handleChange} className="bg-tertiary px-6 py-4 placholder:text-secondary text-white rounded-lg outlined-none border-none font-medium" />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Message</span>
+            <textarea rows='7' name="message" placeholder="message" value={formData.message} onChange={handleChange} className="bg-tertiary px-6 py-4 placholder:text-secondary text-white rounded-lg outlined-none border-none font-medium" />
+          </label>
+
+          <button type="submit" className="text-white py-5 px-8 font-bold shadow-md bg-[#ff0000] rounded-xl shadow-primary">
+            {loading ? 'sending...' : 'Send Message'}
+          </button>
+        </form>
+      </motion.div>
+
+      <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className="xl:flex-1 xl:h-auto md:h-[500px] h-[350px]">
+        <EarthCanvas />
+      </motion.div>
+    </div>
+  );
+};
+
+export default SectionWrapper(Contact, 'contact');

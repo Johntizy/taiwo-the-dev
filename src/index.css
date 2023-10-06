@@ -34,19 +34,19 @@
 }
 
 .violet-gradient {
-  background: #A44DBF;
-  background: linear-gradient(-90deg, #A44DBF 0%, rgba(60, 51, 80, 0) 100%);
+  background: #ff4d00;
+  background: linear-gradient(-90deg, #ff4d00 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #A44DBF 0%,
+    #ff4d00 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
 
 .green-pink-gradient {
-  background: "#55E6A5";
-  background: linear-gradient(90.13deg, #55E6A5 1.9%, #F333BD 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #55E6A5 1.9%, #F333BD 97.5%);
+  background: "#FDCC04";
+  background: linear-gradient(90.13deg, #ff4d00 1.9%, #FFA500 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #ff4d00 1.9%, #FFA500 97.5%);
 }
 
 .orange-text-gradient {
