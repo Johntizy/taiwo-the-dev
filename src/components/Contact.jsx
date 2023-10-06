@@ -41,7 +41,7 @@ const Contact = () => {
             <textarea rows='7' name="message" placeholder="message" value={formData.message} onChange={handleChange} className="bg-tertiary px-6 py-4 placholder:text-secondary text-white rounded-lg outlined-none border-none font-medium" />
           </label>
 
-          <button type="submit" className="text-white py-5 px-8 font-bold shadow-md bg-[#ff0000] rounded-xl shadow-primary">
+          <button type="submit" className="text-white py-3 px-8 font-bold shadow-md bg-[#ff0000] rounded-lg shadow-primary">
             {loading ? 'sending...' : 'Send Message'}
           </button>
         </form>
