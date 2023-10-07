@@ -39,6 +39,7 @@ const App = () => {
           draggable
           pauseOnHover
           theme='dark'
+          className='bg-tertiary'
         />
       </div>
     </BrowserRouter>

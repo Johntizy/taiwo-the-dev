@@ -45,7 +45,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quod rem labore cum tempore repellendus ullam laboriosam, magni harum enim animi, doloribus architecto eligendi, assumenda dolorem rerum distinctio deleniti! Culpa!
+        Explore a selection of my latest web development projects, showcasing a diverse range of skills and technologies. <span className="lg:inline hidden">Each project is a testament to my passion for crafting beautiful, functional, and user-friendly websites that deliver exceptional digital experiences. From responsive designs to custom web applications, my portfolio reflects my commitment to excellence in the world of web development.</span>
         </motion.p>
       </div>
 

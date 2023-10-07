@@ -1,5 +1,5 @@
 import React from "react";
-
+import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -15,14 +15,24 @@ const Hero = () => {
           <div className='w-1 sm:h80 h-40 violet-gradient'></div>
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText}`}>
-            Hi, I'm <span className='text-[#ff4d00]'>Taiwo</span>
+          <h1 className={`${styles.heroHeadText} flex gap-5`}>
+            Hi, I'm{" "} <span className='text-[#ff4d00]'>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Taiwo John")
+                    .deleteAll()
+                    .typeString("A Frontend Developer")
+                    .start();
+                }}
+              />
+            </span>
           </h1>
 
           <p className={`${styles.heroSubText} text-white-100`}>
             {" "}
-            I develop 3D Visuals, <br className='sm:block hidden' /> User
-            Interfaces and web applications
+            I develop web applications, <br className='sm:block hidden' /> User
+            Interfaces and mobile applications
           </p>
         </div>
       </div>

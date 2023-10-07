@@ -72,16 +72,18 @@ const Contact = () => {
               type='text'
               name='name'
               placeholder='Enter your name'
+              required
               value={formData.name}
               onChange={handleChange}
               className='bg-tertiary px-6 py-4 placholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type='email'
               name='email'
+              required
               placeholder='Enter your email address'
               value={formData.email}
               onChange={handleChange}
@@ -94,6 +96,7 @@ const Contact = () => {
               rows='7'
               name='message'
               placeholder='message'
+              required
               value={formData.message}
               onChange={handleChange}
               className='bg-tertiary px-6 py-4 placholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'

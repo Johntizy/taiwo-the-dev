@@ -23,6 +23,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  giver,
+  gpt,
+  tmdb,
+  natours,
+  cryptonect,
+  getlinked,
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +60,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Content Writing",
     icon: creator,
   },
 ];
@@ -116,133 +122,123 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Web Development Intern",
+    company_name: "SQL Academy ICT",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "September 2020 - Novemeber 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Conversion of mock design to code",
+      "Conversion of Figma design to css",
+      "Development of web application with engaging user-interface",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Web Designer",
+    company_name: "Regnant Digital",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Conversion of ui/ux designs into real web design",
+      "Creation of websites with cms (wordpress & Shopify)",
+      "Fixing and Debugging of Wordpress sites",
+      "Creation of ecommerce sites with wordpress (woocomerce) and shopify",
+      "Installation, upgrading, maintaining, testing and troubleshooting",
     ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "GpT 3",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "Welcome to GPT-3: Where Creativity Meets AI. Explore my portfolio showcasing cutting-edge web design, highlighting the seamless fusion of art and artificial intelligence. Witness the future of digital experiences!",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: gpt,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Giver",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A sleek web design solution tailored specifically for the real estate industry. Giver combines stunning visuals, user-friendly navigation, and powerful features to showcase their listings and services.",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Jquery",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: giver,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Natours",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Natours is a captivating web design project that showcases my expertise in creating visually stunning and user-friendly websites tailored for outdoor enthusiasts and adventure seekers.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: natours,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "React Movie",
+    description:
+      "A dynamic movie web application showcasing the power of React technology and TMDB API in web design. Explore a visually stunning and user-friendly interface for browsing your favorite movies.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tmdb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tmdb,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Natours",
+    description:
+      "A modern cryptocurrency website that combines cutting-edge visuals with intuitive user experience, creating a seamless connection between users and the world of digital currencies.",
     tags: [
       {
         name: "nextjs",
@@ -257,9 +253,30 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: cryptonect,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "GetLinked Challenge",
+    description:
+      "This project encapsulates my ability to transform concepts into visually stunning and user-friendly websites. Dive into a world where innovation meets aesthetics, and witness how I leverage my skills.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: getlinked,
     source_code_link: "https://github.com/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
