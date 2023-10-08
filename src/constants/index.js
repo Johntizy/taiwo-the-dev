@@ -12,17 +12,12 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  sass,
+  chakra,
+  material,
+  bootstrap,
+  sqi,
+  regnant,
   giver,
   gpt,
   tmdb,
@@ -37,8 +32,16 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+  {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "portfolio",
+    title: "My Portfolio",
   },
   {
     id: "contact",
@@ -102,31 +105,33 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
+  
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Sass",
+    icon: sass,
   },
   {
-    name: "git",
-    icon: git,
+    name: "Chakra UI",
+    icon: chakra,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Material UI",
+    icon: material,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Bootstrap",
+    icon: bootstrap,
   },
+
 ];
 
 const experiences = [
   {
     title: "Web Development Intern",
     company_name: "SQL Academy ICT",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "September 2020 - Novemeber 2021",
+    icon: sqi,
+    iconBg: "#E6DEDD",
+    date: "September 2020 - October 2021",
     points: [
       "Conversion of mock design to code",
       "Conversion of Figma design to css",
@@ -136,9 +141,9 @@ const experiences = [
   {
     title: "Web Designer",
     company_name: "Regnant Digital",
-    icon: tesla,
+    icon: regnant,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "October 2021 - November 2022",
     points: [
       "Conversion of ui/ux designs into real web design",
       "Creation of websites with cms (wordpress & Shopify)",
@@ -170,7 +175,8 @@ const projects = [
       },
     ],
     image: gpt,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/taiwo-the-dev/gpt-4/",
+    web_link: "https://taiwo-john.dev/portfolio/gpt-3/",
   },
   {
     name: "Giver",
@@ -191,7 +197,8 @@ const projects = [
       },
     ],
     image: giver,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/taiwo-the-dev/gpt-4/",
+    web_link: "https://giver.netlify.app/",
   },
   {
     name: "Natours",
@@ -212,7 +219,8 @@ const projects = [
       },
     ],
     image: natours,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/taiwo-the-dev/natours",
+    web_link: "https://natours-outdoorscss.netlify.app",
   },
   {
     name: "React Movie",
@@ -233,19 +241,20 @@ const projects = [
       },
     ],
     image: tmdb,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/taiwo-the-dev/react_tmdb",
+    web_link: "https://taiwo-john.dev/portfolio/tmdb/",
   },
   {
-    name: "Natours",
+    name: "Cryptonect",
     description:
       "A modern cryptocurrency website that combines cutting-edge visuals with intuitive user experience, creating a seamless connection between users and the world of digital currencies.",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "JQuery",
         color: "green-text-gradient",
       },
       {
@@ -254,7 +263,7 @@ const projects = [
       },
     ],
     image: cryptonect,
-    source_code_link: "https://github.com/",
+    web_link: "https://cryptonect.app",
   },
   {
     name: "GetLinked Challenge",
@@ -275,7 +284,8 @@ const projects = [
       },
     ],
     image: getlinked,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/taiwo-the-dev/challenge_linked/",
+    web_link: "https://getlinked-john.netlify.app",
   },
 ];
 

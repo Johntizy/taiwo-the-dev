@@ -31,17 +31,13 @@ const About = () => {
     <>
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}>Introdution</p>
-        <h2 className={styles.heroHeadText}>Overview</h2>
+        <h2 className={styles.heroHeadText}>About Me</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl loading-[30px]'>
-        An innovative developer, Fintech enthusiast and IT personnel experienced
-        in the development of elegant and groundbreaking web- applications for
-        entrepreneurs, project management processes. Highly organized with
-        expertise in scheduling projects through different stages of development
-        cycle. Love buildingaroundFintech.
+        An innovative software developer and IT professional. I bring a wealth of experience in creating cutting-edge software applications that empower entrepreneurs and streamline project management processes. I am highly organized and skilled in efficiently guiding projects through various stages of the development cycle. My passion lies in crafting software solutions, particularly in the exciting field of Fintech
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
