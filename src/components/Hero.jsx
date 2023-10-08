@@ -22,7 +22,7 @@ const Hero = () => {
                   typewriter
                     .typeString("Taiwo John")
                     .deleteAll()
-                    .typeString("A Frontend Developer")
+                    .typeString("A Software Developer")
                     .start();
                 }}
               />
@@ -31,8 +31,8 @@ const Hero = () => {
 
           <p className={`${styles.heroSubText} text-white-100`}>
             {" "}
-            I develop web applications, <br className='sm:block hidden' /> User
-            Interfaces and mobile applications
+            I develop Web Applications, <br className='sm:block hidden' /> User
+            Interfaces and Mobile Applications
           </p>
         </div>
       </div>
